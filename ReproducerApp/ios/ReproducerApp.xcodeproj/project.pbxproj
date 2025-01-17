@@ -15,6 +15,11 @@
 		7699B88040F8A987B510C191 /* libPods-ReproducerApp-ReproducerAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReproducerApp-ReproducerAppTests.a */; };
 		79DD81DB8244057939EC9604 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		967219BD2D3A985F0035A58F /* TestEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967219B72D3A985F0035A58F /* TestEmitter.swift */; };
+		967219BE2D3A985F0035A58F /* TestEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 967219B62D3A985F0035A58F /* TestEmitter.m */; };
+		967219BF2D3A985F0035A58F /* WorkerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 967219BA2D3A985F0035A58F /* WorkerManager.mm */; };
+		967219C02D3A985F0035A58F /* WorkerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967219BB2D3A985F0035A58F /* WorkerManager.swift */; };
+		967219CB2D3AA8430035A58F /* worker.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 967219C92D3AA8430035A58F /* worker.jsbundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,15 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReproducerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReproducerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReproducerApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReproducerApp-ReproducerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReproducerApp-ReproducerAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReproducerApp-ReproducerAppTests/Pods-ReproducerApp-ReproducerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		967219B52D3A985F0035A58F /* TestEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEmitter.h; sourceTree = "<group>"; };
+		967219B62D3A985F0035A58F /* TestEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEmitter.m; sourceTree = "<group>"; };
+		967219B72D3A985F0035A58F /* TestEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEmitter.swift; sourceTree = "<group>"; };
+		967219B92D3A985F0035A58F /* WorkerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkerManager.h; sourceTree = "<group>"; };
+		967219BA2D3A985F0035A58F /* WorkerManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WorkerManager.mm; sourceTree = "<group>"; };
+		967219BB2D3A985F0035A58F /* WorkerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerManager.swift; sourceTree = "<group>"; };
+		967219C12D3A98600035A58F /* ReproducerApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReproducerApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		967219C92D3AA8430035A58F /* worker.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = worker.jsbundle; sourceTree = "<group>"; };
+		967219CA2D3AA8430035A58F /* worker.jsbundle.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = worker.jsbundle.map; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -88,6 +102,14 @@
 		13B07FAE1A68108700A75B9A /* ReproducerApp */ = {
 			isa = PBXGroup;
 			children = (
+				967219C92D3AA8430035A58F /* worker.jsbundle */,
+				967219CA2D3AA8430035A58F /* worker.jsbundle.map */,
+				967219B52D3A985F0035A58F /* TestEmitter.h */,
+				967219B62D3A985F0035A58F /* TestEmitter.m */,
+				967219B72D3A985F0035A58F /* TestEmitter.swift */,
+				967219B92D3A985F0035A58F /* WorkerManager.h */,
+				967219BA2D3A985F0035A58F /* WorkerManager.mm */,
+				967219BB2D3A985F0035A58F /* WorkerManager.swift */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -95,6 +117,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				967219C12D3A98600035A58F /* ReproducerApp-Bridging-Header.h */,
 			);
 			name = ReproducerApp;
 			sourceTree = "<group>";
@@ -209,7 +232,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -246,6 +269,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				967219CB2D3AA8430035A58F /* worker.jsbundle in Resources */,
 				79DD81DB8244057939EC9604 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +421,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				967219BD2D3A985F0035A58F /* TestEmitter.swift in Sources */,
+				967219BE2D3A985F0035A58F /* TestEmitter.m in Sources */,
+				967219BF2D3A985F0035A58F /* WorkerManager.mm in Sources */,
+				967219C02D3A985F0035A58F /* WorkerManager.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReproducerApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReproducerApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,6 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReproducerApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReproducerApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -586,10 +616,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -658,10 +685,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

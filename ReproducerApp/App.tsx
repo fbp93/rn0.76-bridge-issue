@@ -5,9 +5,10 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  NativeModules,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -61,6 +62,12 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  const { WorkerManager } = NativeModules;
+
+  useEffect(() => {
+    WorkerManager.startWorker();
+  }, [WorkerManager]);
 
   return (
     <SafeAreaView style={backgroundStyle}>
